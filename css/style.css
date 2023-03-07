@@ -17,19 +17,27 @@ p{
     color: aqua;
 }
 .contenedor{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
     margin: 1rem;
 }
+.contenedor > * {
+    flex: 1 100%;
+}
 .item01{
-    flex-grow: 1;
+    flex: 1 0 0; /*grow shrink basis*/
+    padding: 0.3rem;
+    /*flex-grow: 1;
     display: inline;
-    width: 30%;
+    width: 30%;*/ 
 }
 .item02{
-    flex-grow: 2;
+    text-align: left;
+    flex: 2 0 0;
+    /*flex-grow: 2;
     flex-shrink: 3;
     display: inline;
-    width: 60%;
+    width: 60%;*/
 }
